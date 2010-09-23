@@ -1,8 +1,11 @@
-###  HTML5 Boilerplate
+###  íomhás
 
 ## CHANGELOG:
 
-v0.9 -August 10th, 2010 - Initial release
+#0.2
+* v0.9 -August 10th, 2010 - Initial release of HTML5 Boilerplate
+* permalinks created as separate html files
+* basic Facebook functionality added
 
 ## LICENSE:
 
@@ -10,25 +13,29 @@ The Unlicense (aka: public domain) http://unlicense.org
 
 ## INSTALLATION:
 
-This is a set of files that a front-end developer can use to get started on a website, with following included:
+# Requirements
+* PHP 5
+* PHP shortcuts enabled (enable writing of <?= $var ?> instead of <?php echo $var ?>)
+* No database required
 
-    1. Cross-browser compatible (IE6, yeah we got that.)
-    2. HTML5 ready. Use the new tags with certainty.
-    3. Optimal caching and compression rules for grade-A performance
-    4. Best practice site configuration defaults
-    5. Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)
-    6. Mobile browser optimizations
-    7. Progressive enhancement graceful degredation ........ yeah yeah we got that
-    8. IE specific classes for maximum cross-browser control
-    9. Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.
-    10. Javascript profiling.. in IE6 and IE7? Sure, no problem.
-    11. Console.log nerfing so you won't break anyone by mistake.
-    12. Never go wrong with your doctype or markup!
-    13. An optimal print stylesheet, performance optimized
-    14. iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.
-    15. IE6 pngfix baked in.
-    16. jQuery, waiting for you
-    
+## TODO
+* build a login option (clickpass?)
+** enable admins to upload photos
+** enable admins to change display settings
+** enable caption editing
+* enable filtering
+* enable photo title
+* enable photo credit if multiple authors
+* build a homepage
+* enable set URL to permalink on click.
+* create a 'shopping cart'
+* build a URL that will re-generate the page.
+* build a fancybox-style indicator that the page is generating.
+* use media querys to not rely on masonry for mobile
 
-There will be two releases: a documented release, which is exactly what you see here, and a production release, with most of the descriptive comments stripped out.
+## IDEAS
+* make thumb size relative to window size
 
+##KNOWN ISSUES
+* If you have third party cookies disabled in Firefox, Facebook Like buttons do not work. This is a Facebook problem, and there's nothing we can do about it.
+* If the window is too large, infinitescroll will not fire. This has been partly addressed by forcing it to fire once on page load, but very likely it should be set to fire everytime there is no scroll bar.
